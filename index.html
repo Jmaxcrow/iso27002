@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="menu-hamburguesa" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Empresa</a>
+                </div>
+                  
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="politicas.html" target="mostrar">Políticas <span class="sr-only">(current)</span></a></li>
+                        <li><a href="organizacion.html" target="mostrar">Organización</a></li>
+                        <li><a href="rrhh.html" target="mostrar">Recursos Humanos</a></li>
+                        <li><a href="activos.html" target="mostrar">Activos</a></li>
+                        <li><a href="accesos.html" target="mostrar">Accesos</a></li>
+                        <li><a href="cifrado.html" target="mostrar">Cifrado</a></li>
+                        <li><a href="fisicayambiental.html" target="mostrar">Fisica y Ambiente</a></li>
+                        <li><a href="operativas.html" target="mostrar">Operativas</a></li>
+                        <li><a href="telecomunicaciones.html" target="mostrar">Telecomunicaciones</a></li>
+                        <li><a href="proyectos_mantenimiento.html" target="mostrar">Proyectos y Mantenimiento</a></li>
+                        <li><a href="proveedores.html" target="mostrar">Proveedores</a></li>
+                        <li><a href="incidentes.html" target="mostrar">Incidentes</a></li>
+                        <li><a href="continuidad.html" target="mostrar">Continuidad del Negocio</a></li>
+                        <li><a href="cumplimiento.html" target="mostrar">Cumplimiento</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    
+    <iframe src="imagen.html" frameborder="0" width="100%" name="mostrar"></iframe>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var alt_frame = $(window).height();
+        $('iframe').attr('height', alt_frame - 80);
+
+        $('nav li a').click(function(){
+            $('#menu-hamburguesa').click();
+        });
+
+    });
+    </script>
+</body>
+</html>
